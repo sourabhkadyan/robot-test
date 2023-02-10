@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Robot Framework Test Results Dashboard</h2>
+    <table>
+      <tr>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Duration</th>
+      </tr>
+      <!-- Iterate through the test cases in the output.xml file -->
+      <?php
+        $xml = simplexml_load_file("/result/output.xml");
+        foreach ($xml->suite->test as $test) {
+          echo "<tr>";
+          echo "<td>" . $test['name'] . "</td>";
+          echo "<td>" . $test->status['status'] . "</td>";
+          echo "<td>" . $test->status['starttime'] . "</td>";
+          echo "<td>" . $test->status['endtime'] . "</td>";
+          echo "<td>" . $test->status['elapsedtime'] . "</td>";
+          echo "</tr>";
+        }
+      ?>
+    </table>
+  </body>
+</html>
