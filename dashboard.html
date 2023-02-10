@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    th {
-      background-color: #dddddd;
-    }
-  </style>
-</head>
-<body>
-  <h2>Robot Framework Result Dashboard</h2>
-  <table id="testResults">
-  <tr>
-    <th>Test Name</th>
-    <th>Status</th>
-    <th>Message</th>
-  </tr>
-   <script>
-    const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "/result/report.html", false);
-    xhttp.send();
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(xhttp.responseText, "text/html");
-    const testCases = htmlDoc.getElementsByClassName("col-md-3");
-    for (let i = 0; i < testCases.length; i++) {
-      const testCase = testCases[i];
-      const testName = testCase.getElementsByTagName("a")[0].textContent;
-      const status = testCase.getElementsByClassName("status")[0].textContent;
-      let message = "";
-      if (testCase.getElementsByClassName("message").length > 0) {
-        message = testCase.getElementsByClassName("message")[0].textContent;
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
       }
-      document.write("<tr><td>" + testName + "</td><td>" + status + "</td><td>" + message + "</td></tr>");
-    }
-  </script>
-</table>
 
-</body>
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Total Tests</th>
+        <th>Passed Tests</th>
+        <th>Failed Tests</th>
+      </tr>
+      <tr>
+        <td id="totalTests"></td>
+        <td id="passedTests"></td>
+        <td id="failedTests"></td>
+      </tr>
+    </table>
+    <script>
+      const xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "/result/output.xml", false);
+      xhttp.send();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xhttp.responseText, "text/xml");
+      const stats = xmlDoc.getElementsByTagName("statistics")[0];
+      const totalTests = stats.getAttribute("tests");
+      const passedTests = stats.getAttribute("pass");
+      const failedTests = stats.getAttribute("fail");
+      document.getElementById("totalTests").innerHTML = totalTests;
+      document.getElementById("passedTests").innerHTML = passedTests;
+      document.getElementById("failedTests").innerHTML = failedTests;
+    </script>
+  </body>
 </html>
