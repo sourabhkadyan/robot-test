@@ -25,17 +25,21 @@
     <th>Status</th>
     <th>Message</th>
   </tr>
-  <script>
+   <script>
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "output.xml", false);
+    xhttp.open("GET", "/result/report.html", false);
     xhttp.send();
-    const xml = xhttp.responseXML;
-    const testCases = xml.getElementsByTagName("test");
+    const parser = new DOMParser();
+    const htmlDoc = parser.parseFromString(xhttp.responseText, "text/html");
+    const testCases = htmlDoc.getElementsByClassName("col-md-3");
     for (let i = 0; i < testCases.length; i++) {
       const testCase = testCases[i];
-      const testName = testCase.getAttribute("name");
-      const status = testCase.getElementsByTagName("status")[0].getAttribute("status");
-      const message = testCase.getElementsByTagName("message")[0].textContent;
+      const testName = testCase.getElementsByTagName("a")[0].textContent;
+      const status = testCase.getElementsByClassName("status")[0].textContent;
+      let message = "";
+      if (testCase.getElementsByClassName("message").length > 0) {
+        message = testCase.getElementsByClassName("message")[0].textContent;
+      }
       document.write("<tr><td>" + testName + "</td><td>" + status + "</td><td>" + message + "</td></tr>");
     }
   </script>
