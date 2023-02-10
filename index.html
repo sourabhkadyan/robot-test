@@ -212,18 +212,64 @@
     <h1>Welcome to Dashboard</h1>
   </hgroup>
   <div class="row">
-    <section class='col-xs-12 col-sm-6 col-md-6'>
+    <section class='col-xs-15 col-sm-8 col-md-6'>
       <section>
-       <h3>Check the log files here</h3>
+        <h2>Robot Framework Test Results</h2>
+    <table id="robot-results-table" border="1">
+      <tr>
+        <th>Test Suite</th>
+        <th>Pass</th>
+        <th>Fail</th>
+        <th>Skip</th>
+      </tr>
+    </table>
+    <script>
+      // Fetch the XML file containing the test results
+      fetch('/result/output.xml')
+        .then(response => response.text())
+        .then(data => {
+          // Parse the XML data
+          const parser = new DOMParser();
+          const xml = parser.parseFromString(data, 'text/xml');
+
+          // Extract the test suite information
+          const testSuites = xml.querySelectorAll('stat');
+          
+          // Calculate the total number of test cases, pass, and fail
+          let totalPass = 0;
+          let totalFail = 0;
+          let totalTestCases = 0;
+          
+          for (let i = 2; i < testSuites.length; i++) {
+      const testSuite = testSuites[i];
+      const pass = parseInt(testSuite.getAttribute('pass'));
+      const fail = parseInt(testSuite.getAttribute('fail'));
+      const skip = parseInt(testSuite.getAttribute('skip'));
+      const name = testSuite.getAttribute('name');
+      const row = `<tr><td style="padding: 10px">${name}</td><td style="padding: 10px">${pass + fail + skip}</td><td style="padding: 10px">${pass}</td><td style="padding: 10px">${fail}</td></tr>`;
+      totalPass += pass;
+      totalFail += fail;
+      totalTestCases += pass + fail + skip;
+      document.querySelector('#robot-results-table').innerHTML += row;
+    }
+          
+          // Add a row to display the total number of test cases, pass, and fail
+          const totalRow = `<tr><td style="padding: 10px"><b>Total</b></td><td style="padding: 10px"><b>${totalPass}</b></td><td style="padding: 10px"><b>${totalFail}</b></td><td style="padding: 10px"><b>${totalTestCases - totalPass - totalFail}</b></td></tr>`;
+          document.querySelector('#robot-results-table').innerHTML += totalRow;
+        });
+    </script>
+      </section>
+    </section>
+    <section class="col-xs-8 col-sm-6 col-md-6">
+      <h3>For more information and help</h3>
       <ul>
         <li><a href="/result/report.html">report</a></li>
         <li><a href="/result/log.html">log</a></li>
-        <li><a href="dashboard.html">dashboard</a></li>
       </ul>
     </section>
   </div> 
   <footer>
-    <div class="logo"><a href="https://www.openshift.com/"></a></div>
+    <div class="logo" style="pointer-events: none;"><a href="https://www.openshift.com/"></a></div>
   </footer>
 </section>
 
