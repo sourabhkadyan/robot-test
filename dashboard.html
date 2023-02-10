@@ -19,53 +19,27 @@
 </head>
 <body>
   <h2>Robot Framework Result Dashboard</h2>
-  <table id="results-table">
-    <tr>
-      <th>Test Name</th>
-      <th>Status</th>
-      <th>Start Time</th>
-      <th>End Time</th>
-    </tr>
-  </table>
+  <table id="testResults">
+  <tr>
+    <th>Test Name</th>
+    <th>Status</th>
+    <th>Message</th>
+  </tr>
   <script>
-    // Load the XML file
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/result/output.xml", true);
-    xhr.send();
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        // Parse the XML data
-        var xml = xhr.responseXML;
-        var tests = xml.getElementsByTagName("test");
-
-        // Extract the relevant information from the XML data
-        var data = [];
-        for (var i = 0; i < tests.length; i++) {
-          var test = tests[i];
-          var testData = {
-            name: test.getAttribute("name"),
-            status: test.getAttribute("status"),
-            starttime: test.getAttribute("starttime"),
-            endtime: test.getAttribute("endtime")
-          };
-          data.push(testData);
-        }
-
-        // Generate the HTML table for the dashboard
-        var table = document.getElementById("results-table");
-        for (var i = 0; i < data.length; i++) {
-          var row = table.insertRow();
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-          var cell3 = row.insertCell(2);
-          var cell4 = row.insertCell(3);
-          cell1.innerHTML = data[i].name;
-          cell2.innerHTML = data[i].status;
-          cell3.innerHTML = data[i].starttime;
-          cell4.innerHTML = data[i].endtime;
-        }
-      }
-    };
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "output.xml", false);
+    xhttp.send();
+    const xml = xhttp.responseXML;
+    const testCases = xml.getElementsByTagName("test");
+    for (let i = 0; i < testCases.length; i++) {
+      const testCase = testCases[i];
+      const testName = testCase.getAttribute("name");
+      const status = testCase.getElementsByTagName("status")[0].getAttribute("status");
+      const message = testCase.getElementsByTagName("message")[0].textContent;
+      document.write("<tr><td>" + testName + "</td><td>" + status + "</td><td>" + message + "</td></tr>");
+    }
   </script>
+</table>
+
 </body>
 </html>
