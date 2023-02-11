@@ -246,7 +246,7 @@
       const fail = parseInt(testSuite.getAttribute('fail'));
       const skip = parseInt(testSuite.getAttribute('skip'));
       const name = testSuite.getAttribute('name');
-      const row = `<tr><td style="padding: 10px">${name}</td><td style="padding: 10px">${pass + fail + skip}</td><td style="padding: 10px">${pass}</td><td style="padding: 10px">${fail}</td></tr>`;
+      const row = `<tr><td style="padding: 10px">${name}</td><td style="padding: 10px">${pass}</td><td style="padding: 10px">${fail}</td><td style="padding: 10px">${skip}</td></tr>`;
       totalPass += pass;
       totalFail += fail;
       totalTestCases += pass + fail + skip;
