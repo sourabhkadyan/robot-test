@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.7 on linux)" generated="20230227 11:07:09.430" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.7 on linux)" generated="20230227 11:31:04.057" rpa="false" schemaversion="3">
 <suite id="s1" name="Source" source="/workspace/source">
 <suite id="s1-s1" name="Data Driven" source="/workspace/source/data_driven.robot">
 <test id="s1-s1-t1" name="Addition" line="17">
@@ -9,14 +9,14 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.457" endtime="20230227 11:07:09.457"/>
+<status status="PASS" starttime="20230227 11:31:04.088" endtime="20230227 11:31:04.089"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.457" endtime="20230227 11:07:09.458"/>
+<status status="PASS" starttime="20230227 11:31:04.089" endtime="20230227 11:31:04.089"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.456" endtime="20230227 11:07:09.458"/>
+<status status="PASS" starttime="20230227 11:31:04.088" endtime="20230227 11:31:04.089"/>
 </kw>
 <kw name="Calculate">
 <arg>2 + -3</arg>
@@ -24,16 +24,16 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.458" endtime="20230227 11:07:09.458"/>
+<status status="PASS" starttime="20230227 11:31:04.090" endtime="20230227 11:31:04.090"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.458" endtime="20230227 11:07:09.459"/>
+<status status="PASS" starttime="20230227 11:31:04.090" endtime="20230227 11:31:04.090"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.458" endtime="20230227 11:07:09.459"/>
+<status status="PASS" starttime="20230227 11:31:04.089" endtime="20230227 11:31:04.090"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.456" endtime="20230227 11:07:09.459"/>
+<status status="PASS" starttime="20230227 11:31:04.087" endtime="20230227 11:31:04.091"/>
 </test>
 <test id="s1-s1-t2" name="Subtraction" line="20">
 <kw name="Calculate">
@@ -42,14 +42,14 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.460" endtime="20230227 11:07:09.460"/>
+<status status="PASS" starttime="20230227 11:31:04.092" endtime="20230227 11:31:04.092"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.460" endtime="20230227 11:07:09.460"/>
+<status status="PASS" starttime="20230227 11:31:04.092" endtime="20230227 11:31:04.092"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.459" endtime="20230227 11:07:09.460"/>
+<status status="PASS" starttime="20230227 11:31:04.091" endtime="20230227 11:31:04.092"/>
 </kw>
 <kw name="Calculate">
 <arg>2 - -3</arg>
@@ -57,16 +57,16 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.461" endtime="20230227 11:07:09.461"/>
+<status status="PASS" starttime="20230227 11:31:04.093" endtime="20230227 11:31:04.093"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.461" endtime="20230227 11:07:09.461"/>
+<status status="PASS" starttime="20230227 11:31:04.093" endtime="20230227 11:31:04.093"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.460" endtime="20230227 11:07:09.461"/>
+<status status="PASS" starttime="20230227 11:31:04.092" endtime="20230227 11:31:04.093"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.459" endtime="20230227 11:07:09.461"/>
+<status status="PASS" starttime="20230227 11:31:04.091" endtime="20230227 11:31:04.093"/>
 </test>
 <test id="s1-s1-t3" name="Multiplication" line="23">
 <kw name="Calculate">
@@ -75,14 +75,14 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.462" endtime="20230227 11:07:09.463"/>
+<status status="PASS" starttime="20230227 11:31:04.094" endtime="20230227 11:31:04.095"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.463" endtime="20230227 11:07:09.463"/>
+<status status="PASS" starttime="20230227 11:31:04.095" endtime="20230227 11:31:04.095"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.462" endtime="20230227 11:07:09.463"/>
+<status status="PASS" starttime="20230227 11:31:04.094" endtime="20230227 11:31:04.095"/>
 </kw>
 <kw name="Calculate">
 <arg>2 * -3</arg>
@@ -90,16 +90,16 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.463" endtime="20230227 11:07:09.464"/>
+<status status="PASS" starttime="20230227 11:31:04.095" endtime="20230227 11:31:04.096"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.464" endtime="20230227 11:07:09.464"/>
+<status status="PASS" starttime="20230227 11:31:04.096" endtime="20230227 11:31:04.096"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.463" endtime="20230227 11:07:09.464"/>
+<status status="PASS" starttime="20230227 11:31:04.095" endtime="20230227 11:31:04.096"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.462" endtime="20230227 11:07:09.464"/>
+<status status="PASS" starttime="20230227 11:31:04.094" endtime="20230227 11:31:04.096"/>
 </test>
 <test id="s1-s1-t4" name="Division" line="26">
 <kw name="Calculate">
@@ -108,14 +108,14 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.465" endtime="20230227 11:07:09.465"/>
+<status status="PASS" starttime="20230227 11:31:04.097" endtime="20230227 11:31:04.097"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.465" endtime="20230227 11:07:09.465"/>
+<status status="PASS" starttime="20230227 11:31:04.097" endtime="20230227 11:31:04.097"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.464" endtime="20230227 11:07:09.466"/>
+<status status="PASS" starttime="20230227 11:31:04.097" endtime="20230227 11:31:04.098"/>
 </kw>
 <kw name="Calculate">
 <arg>2 / -3</arg>
@@ -123,16 +123,16 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.466" endtime="20230227 11:07:09.466"/>
+<status status="PASS" starttime="20230227 11:31:04.098" endtime="20230227 11:31:04.098"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.466" endtime="20230227 11:07:09.467"/>
+<status status="PASS" starttime="20230227 11:31:04.098" endtime="20230227 11:31:04.099"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.466" endtime="20230227 11:07:09.467"/>
+<status status="PASS" starttime="20230227 11:31:04.098" endtime="20230227 11:31:04.099"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.464" endtime="20230227 11:07:09.467"/>
+<status status="PASS" starttime="20230227 11:31:04.096" endtime="20230227 11:31:04.099"/>
 </test>
 <test id="s1-s1-t5" name="Failing" line="29">
 <kw name="Calculate">
@@ -141,16 +141,16 @@
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>C${expression}=</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.468" endtime="20230227 11:07:09.468"/>
+<status status="PASS" starttime="20230227 11:31:04.100" endtime="20230227 11:31:04.100"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${expected}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.468" endtime="20230227 11:07:09.468"/>
+<status status="PASS" starttime="20230227 11:31:04.100" endtime="20230227 11:31:04.100"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.467" endtime="20230227 11:07:09.468"/>
+<status status="PASS" starttime="20230227 11:31:04.099" endtime="20230227 11:31:04.100"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.467" endtime="20230227 11:07:09.468"/>
+<status status="PASS" starttime="20230227 11:31:04.099" endtime="20230227 11:31:04.100"/>
 </test>
 <test id="s1-s1-t6" name="Calculation error" line="31">
 <kw name="Calculation should fail">
@@ -160,16 +160,16 @@
 <var>${error}</var>
 <arg>C${expression}=</arg>
 <doc>Verifies that calculating the given ``expression`` causes an error.</doc>
-<msg timestamp="20230227 11:07:09.469" level="INFO">${error} = Invalid button 'k'.</msg>
-<status status="PASS" starttime="20230227 11:07:09.469" endtime="20230227 11:07:09.469"/>
+<msg timestamp="20230227 11:31:04.102" level="INFO">${error} = Invalid button 'k'.</msg>
+<status status="PASS" starttime="20230227 11:31:04.101" endtime="20230227 11:31:04.102"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${expected}</arg>
 <arg>${error}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230227 11:07:09.470" endtime="20230227 11:07:09.470"/>
+<status status="PASS" starttime="20230227 11:31:04.102" endtime="20230227 11:31:04.102"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.469" endtime="20230227 11:07:09.470"/>
+<status status="PASS" starttime="20230227 11:31:04.101" endtime="20230227 11:31:04.102"/>
 </kw>
 <kw name="Calculation should fail">
 <arg>${EMPTY}</arg>
@@ -178,16 +178,16 @@
 <var>${error}</var>
 <arg>C${expression}=</arg>
 <doc>Verifies that calculating the given ``expression`` causes an error.</doc>
-<msg timestamp="20230227 11:07:09.471" level="INFO">${error} = Invalid expression.</msg>
-<status status="PASS" starttime="20230227 11:07:09.471" endtime="20230227 11:07:09.471"/>
+<msg timestamp="20230227 11:31:04.103" level="INFO">${error} = Invalid expression.</msg>
+<status status="PASS" starttime="20230227 11:31:04.103" endtime="20230227 11:31:04.103"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${expected}</arg>
 <arg>${error}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230227 11:07:09.471" endtime="20230227 11:07:09.471"/>
+<status status="PASS" starttime="20230227 11:31:04.103" endtime="20230227 11:31:04.104"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.470" endtime="20230227 11:07:09.471"/>
+<status status="PASS" starttime="20230227 11:31:04.102" endtime="20230227 11:31:04.104"/>
 </kw>
 <kw name="Calculation should fail">
 <arg>1 / 0</arg>
@@ -196,18 +196,18 @@
 <var>${error}</var>
 <arg>C${expression}=</arg>
 <doc>Verifies that calculating the given ``expression`` causes an error.</doc>
-<msg timestamp="20230227 11:07:09.472" level="INFO">${error} = Division by zero.</msg>
-<status status="PASS" starttime="20230227 11:07:09.472" endtime="20230227 11:07:09.472"/>
+<msg timestamp="20230227 11:31:04.105" level="INFO">${error} = Division by zero.</msg>
+<status status="PASS" starttime="20230227 11:31:04.104" endtime="20230227 11:31:04.105"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${expected}</arg>
 <arg>${error}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230227 11:07:09.472" endtime="20230227 11:07:09.473"/>
+<status status="PASS" starttime="20230227 11:31:04.105" endtime="20230227 11:31:04.105"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.472" endtime="20230227 11:07:09.473"/>
+<status status="PASS" starttime="20230227 11:31:04.104" endtime="20230227 11:31:04.105"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.468" endtime="20230227 11:07:09.473"/>
+<status status="PASS" starttime="20230227 11:31:04.101" endtime="20230227 11:31:04.105"/>
 </test>
 <doc>Example test cases using the data-driven testing approach.
 
@@ -220,7 +220,7 @@ is the last test that has a custom _template keyword_.
 
 Notice that one of these tests fails on purpose to show how
 failures look like.</doc>
-<status status="PASS" starttime="20230227 11:07:09.451" endtime="20230227 11:07:09.473"/>
+<status status="PASS" starttime="20230227 11:31:04.082" endtime="20230227 11:31:04.106"/>
 </suite>
 <suite id="s1-s2" name="Gherkin" source="/workspace/source/gherkin.robot">
 <test id="s1-s2-t1" name="Addition" line="16">
@@ -228,35 +228,35 @@ failures look like.</doc>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>C</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.477" endtime="20230227 11:07:09.477"/>
+<status status="PASS" starttime="20230227 11:31:04.110" endtime="20230227 11:31:04.110"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.477" endtime="20230227 11:07:09.477"/>
+<status status="PASS" starttime="20230227 11:31:04.110" endtime="20230227 11:31:04.110"/>
 </kw>
 <kw name="When user types &quot;1 + 1&quot;" sourcename="User types &quot;${expression}&quot;">
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>${expression}</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.478" endtime="20230227 11:07:09.478"/>
+<status status="PASS" starttime="20230227 11:31:04.111" endtime="20230227 11:31:04.111"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.477" endtime="20230227 11:07:09.478"/>
+<status status="PASS" starttime="20230227 11:31:04.110" endtime="20230227 11:31:04.111"/>
 </kw>
 <kw name="and user pushes equals">
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>=</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.478" endtime="20230227 11:07:09.479"/>
+<status status="PASS" starttime="20230227 11:31:04.111" endtime="20230227 11:31:04.111"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.478" endtime="20230227 11:07:09.479"/>
+<status status="PASS" starttime="20230227 11:31:04.111" endtime="20230227 11:31:04.112"/>
 </kw>
 <kw name="Then result is &quot;2&quot;" sourcename="Result is &quot;${result}&quot;">
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${result}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.479" endtime="20230227 11:07:09.479"/>
+<status status="PASS" starttime="20230227 11:31:04.112" endtime="20230227 11:31:04.112"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.479" endtime="20230227 11:07:09.479"/>
+<status status="PASS" starttime="20230227 11:31:04.112" endtime="20230227 11:31:04.112"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.476" endtime="20230227 11:07:09.479"/>
+<status status="PASS" starttime="20230227 11:31:04.109" endtime="20230227 11:31:04.112"/>
 </test>
 <doc>Example test case using the gherkin syntax.
 
@@ -269,98 +269,98 @@ This kind of _gherkin_ syntax has been made popular by
 [http://cukes.info|Cucumber]. It works well especially when
 tests act as examples that need to be easily understood also
 by the business people.</doc>
-<status status="PASS" starttime="20230227 11:07:09.474" endtime="20230227 11:07:09.480"/>
+<status status="PASS" starttime="20230227 11:31:04.107" endtime="20230227 11:31:04.113"/>
 </suite>
 <suite id="s1-s3" name="Keyword Driven" source="/workspace/source/keyword_driven.robot">
 <test id="s1-s3-t1" name="Push button" line="16">
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>1</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.483" endtime="20230227 11:07:09.483"/>
+<status status="PASS" starttime="20230227 11:31:04.116" endtime="20230227 11:31:04.116"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>1</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.483" endtime="20230227 11:07:09.483"/>
+<status status="PASS" starttime="20230227 11:31:04.116" endtime="20230227 11:31:04.116"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.482" endtime="20230227 11:07:09.483"/>
+<status status="PASS" starttime="20230227 11:31:04.116" endtime="20230227 11:31:04.117"/>
 </test>
 <test id="s1-s3-t2" name="Push multiple buttons" line="20">
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>1</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.484" endtime="20230227 11:07:09.484"/>
+<status status="PASS" starttime="20230227 11:31:04.117" endtime="20230227 11:31:04.118"/>
 </kw>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>2</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.484" endtime="20230227 11:07:09.484"/>
+<status status="PASS" starttime="20230227 11:31:04.118" endtime="20230227 11:31:04.118"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>12</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.484" endtime="20230227 11:07:09.484"/>
+<status status="PASS" starttime="20230227 11:31:04.119" endtime="20230227 11:31:04.119"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.483" endtime="20230227 11:07:09.484"/>
+<status status="PASS" starttime="20230227 11:31:04.117" endtime="20230227 11:31:04.119"/>
 </test>
 <test id="s1-s3-t3" name="Simple calculation" line="25">
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>1</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.485" endtime="20230227 11:07:09.485"/>
+<status status="PASS" starttime="20230227 11:31:04.120" endtime="20230227 11:31:04.120"/>
 </kw>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>+</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.485" endtime="20230227 11:07:09.485"/>
+<status status="PASS" starttime="20230227 11:31:04.120" endtime="20230227 11:31:04.121"/>
 </kw>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>2</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.485" endtime="20230227 11:07:09.485"/>
+<status status="PASS" starttime="20230227 11:31:04.121" endtime="20230227 11:31:04.121"/>
 </kw>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>=</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.485" endtime="20230227 11:07:09.486"/>
+<status status="PASS" starttime="20230227 11:31:04.121" endtime="20230227 11:31:04.121"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>3</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.486" endtime="20230227 11:07:09.486"/>
+<status status="PASS" starttime="20230227 11:31:04.121" endtime="20230227 11:31:04.122"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.485" endtime="20230227 11:07:09.486"/>
+<status status="PASS" starttime="20230227 11:31:04.119" endtime="20230227 11:31:04.122"/>
 </test>
 <test id="s1-s3-t4" name="Longer calculation" line="32">
 <kw name="Push Buttons" library="CalculatorLibrary">
 <arg>5 + 4 - 3 * 2 / 1 =</arg>
 <doc>Pushes the specified ``buttons``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.486" endtime="20230227 11:07:09.487"/>
+<status status="PASS" starttime="20230227 11:31:04.123" endtime="20230227 11:31:04.123"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>3</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.487" endtime="20230227 11:07:09.487"/>
+<status status="PASS" starttime="20230227 11:31:04.123" endtime="20230227 11:31:04.123"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.486" endtime="20230227 11:07:09.487"/>
+<status status="PASS" starttime="20230227 11:31:04.122" endtime="20230227 11:31:04.123"/>
 </test>
 <test id="s1-s3-t5" name="Clear" line="36">
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>1</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.487" endtime="20230227 11:07:09.488"/>
+<status status="PASS" starttime="20230227 11:31:04.124" endtime="20230227 11:31:04.125"/>
 </kw>
 <kw name="Push Button" library="CalculatorLibrary">
 <arg>C</arg>
 <doc>Pushes the specified ``button``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.488" endtime="20230227 11:07:09.488"/>
+<status status="PASS" starttime="20230227 11:31:04.125" endtime="20230227 11:31:04.125"/>
 </kw>
 <kw name="Result Should Be" library="CalculatorLibrary">
 <arg>${EMPTY}</arg>
 <doc>Verifies that the current result is ``expected``.</doc>
-<status status="PASS" starttime="20230227 11:07:09.488" endtime="20230227 11:07:09.488"/>
+<status status="PASS" starttime="20230227 11:31:04.125" endtime="20230227 11:31:04.126"/>
 </kw>
-<status status="PASS" starttime="20230227 11:07:09.487" endtime="20230227 11:07:09.489"/>
+<status status="PASS" starttime="20230227 11:31:04.124" endtime="20230227 11:31:04.126"/>
 </test>
 <doc>Example test cases using the keyword-driven testing approach.
 
@@ -373,9 +373,9 @@ automation, but the _gherkin_ style might be even better
 if also business people need to understand tests. If the
 same workflow needs to repeated multiple times, it is best
 to use to the _data-driven_ approach.</doc>
-<status status="PASS" starttime="20230227 11:07:09.480" endtime="20230227 11:07:09.489"/>
+<status status="PASS" starttime="20230227 11:31:04.113" endtime="20230227 11:31:04.126"/>
 </suite>
-<status status="PASS" starttime="20230227 11:07:09.431" endtime="20230227 11:07:09.490"/>
+<status status="PASS" starttime="20230227 11:31:04.058" endtime="20230227 11:31:04.128"/>
 </suite>
 <statistics>
 <total>
